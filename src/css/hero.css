@@ -1,0 +1,36 @@
+
+.hero {
+  background: hsla(210, 90%, 80%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(210, 90%, 80%, 1) 0%,
+    hsla(212, 93%, 49%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(210, 90%, 80%, 1) 0%,
+    hsla(212, 93%, 49%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(210, 90%, 80%, 1) 0%,
+    hsla(212, 93%, 49%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9FCCFA", endColorstr="#0974F1", GradientType=1 );
+}
+
+.head, .title{
+    font-family: "Poppins", serif;
+}
+
+.title .red{
+    color: red;
+}
+
+.title .blue{
+    color: blue;
+}

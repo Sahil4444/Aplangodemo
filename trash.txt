@@ -1,0 +1,90 @@
+<div className="header container py-[15px] px-[30px] flex justify-between align-center text-l">
+      {/* <div className="logo">
+        <img src={logo} alt="Aplango" className="w-25 p-0" />
+      </div>
+      <div className="menu flex items-center gap-5 justify-between">
+        <a className="anc cursor-pointer">
+          <h3 className="  ">Home</h3>
+        </a>
+        <a className="anc cursor-pointer">
+          <h3 className="  ">Products</h3>
+        </a>
+        <a   className="anc cursor-pointer">
+          <h3 className="  ">Solutions</h3>
+        </a>
+        <a   className="anc cursor-pointer">
+          <h3 className="  ">Clients</h3>
+        </a>
+        <a   className="anc cursor-pointer">
+          <h3 className="  ">About Us</h3>
+        </a>
+        <a   className="anc cursor-pointer">
+          <h3 className="  ">Contact Us</h3>
+        </a>
+      </div>
+      <div className="auth flex items-center gap-5 justify-between text-sm">
+        <button className="auth-button">Login</button>
+        <button className="auth-button">Register</button>
+      </div> */}
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav>
+        <div className="py-2 px-4 flex items-center justify-between font-bold">
+          <div className="logo">
+            <img className="w-25 p-0" src={logo} alt="Aplango" />
+          </div>
+
+          <div className="nav-elements hidden md:block">
+            <ul className="flex items-center gap-6 font-semibold text-gray-600">
+              <li className="hover:text-[#1479EA] hover:font-bold">
+                <a href="#">Home</a>
+              </li>
+              <li className="hover:text-[#1479EA] hover:font-bold">
+                <a href="#">Products</a>
+              </li>
+              <li className="hover:text-[#1479EA] hover:font-bold">
+                <a href="#">Solutions</a>
+              </li>
+              <li className="hover:text-[#1479EA] hover:font-bold">
+                <a href="#">Clients</a>
+              </li>
+              <li className="hover:text-[#1479EA] hover:font-bold">
+                <a href="#">About Us</a>
+              </li>
+              <li className="hover:text-[#1479EA] hover:font-bold">
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="auth-btns flex gap-4">
+            <button className="auth-button hidden md:block">Login</button>
+            <button className="auth-button hidden md:block">Register</button>
+          </div>
+
+          {/* Hamburger */}
+          <div className="md:hidden" onClick={() => setOpen(!open)}>
+            <MdMenu className="text-3xl" />
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Section */}
+      <Responsivemenu open={open} />
